@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Arka Nandi - Portfolio</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    header {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    body {
+      text-align: center;
+      color: white;
+      margin-top: 15vh;
+      font-size: 200%;
+      height: 100%;
+    }
+
+    .bg {
+      background-image: url("https://steamuserimages-a.akamaihd.net/ugc/1807625853851741173/D92F2869CE9C0FC9FB6CAE45D3EC039D483C6D9D/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false");
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+    }
+    hr{
+      margin-top: 2vh;
+      width: 100%;
+      height: 0.3vh;
+      background-color: #00e5ff;
+      border: none;
+    }
+    .port{
+      text-align: left;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-left: 16vh;
+      padding-top: 1vh;
+      background-color: #0b044c;
+      width: 100%;
+      height: 8vh;
+      font-size: 5vh;
+    }
+    .tools{
+      font-size: 3.6vh;
+      margin-top:9vh;
+      border-color: #c221c5;
+      border-spacing: 0.6vh;
+      border-collapse: collapse;
+      border-style: solid;
+      border-width: 0.5vh;
+      width: 100%;
+    }
+    .tool:hover{
+      box-shadow: 0 1px 0 rgb(166, 255, 0), 0 2px 0 rgb(169, 210, 2),
+                0 3px 0 rgb(169, 250, 8), 0 4px 0 rgb(169, 250, 8),
+                0 5px 0 rgb(169, 250, 8), 0 6px 0 rgb(9, 1, 43);
+      background-color: #04AA6D;
+      color: #000;
+    }
+    .tool{
+      color: white;
+    }
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: black;
+      color: white;
+      text-align: center;
+      font-size: 3vh;
+    }
+
+    .hello {
+      border-color: #f70808;
+      border-style: solid;
+      border-radius: 15px 50px;
+      margin-top: 6vw;
+      margin-left: 10vw;
+      margin-right: 6vw;
+      margin-bottom: 11vw;
+      padding: 3%;
+      background-color: #6e3c3185;
+      color: rgb(246, 157, 157);
+      float: left;
+      font-size: 8vh;
+    }
+
+    .arka {
+      float: right;
+      margin-right: 12vw;
+      margin-top: 6vw;
+    }
+
+    .img {
+      width: 100%;
+      height: 55vh;
+    }
+
+    #hidden{
+      background: #131415;
+      width: 100%;
+    }
+    #hide:hover {
+  background-color: #ddd;
+  color: black;
+}
+    #hide{
+      position:fixed;
+      top: 0.6vh;
+      left: 2.3vh;
+      border: none;
+      background: transparent;
+      color: white;
+      font-size: 3vh;
+      cursor: pointer;
+      padding: 2vh;
+    }
+    .topnav {
+  position: fixed;
+  right: 1vh;
+  top: 0.8vh;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 2vh;
+  text-decoration: none;
+  font-size: 3vh;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+.topnav .ion {
+  display: none;
+}
+
+@media screen and (max-width: 100vh) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    position: fixed;
+    left: 0.4vh;
+    top: 0.6vh;
+    display: block;
+  }
+  #hide{
+    position: relative;
+    margin-top: -1vh;
+    margin-right: 3vh;
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 3vh;
+    cursor: pointer;
+    padding: 2vh;
+  }
+}
+
+@media screen and (max-width: 100vh) {
+  .hello {
+    margin-left: 3vh;
+    margin-right: 2vh;
+    }
+
+    .img {
+      margin-left: 7vw;
+      margin-top: 3vw;
+      max-height: 80vw;
+    }
+  .topnav.responsive {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right:0;
+  left: 0;
+  bottom: 0;
+  background-color: #131415bf;
+  }
+  .topnav.responsive .icon {
+    display: none;
+  }
+  
+  .responsive #hide{
+  display: none;
+}
+  .topnav.responsive .ion {
+    position: fixed;
+    right: 1vh;
+    top: 0.3vh;
+  }
+  .topnav.responsive a {
+    display: block;
+  }
+  .topnav a.active{
+  font-size: 6vh;
+  margin-top: 8vh;
+  text-align: center;
+  width:70% ;
+  margin-left: 10%;
+  margin-right: 10%;
+  }
+.topnav a.deactive{
+  font-size: 6vh;
+  margin-top: 6vh;
+  text-align: center;
+  width:70% ;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+}
+  </style>
+  <script type="text/Javascript">
+    function display_hidden(){
+      if (document.getElementById("hidden").style.display == "none"){
+        document.getElementById("hidden").style.display = "block";
+      }
+      else{
+        document.getElementById("hidden").style.display = "none"
+      }
+    }
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+function myFun() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+  </script>
+</head>
+
+<body class="bg" onload="display_hidden()">
+  <header ALIGN="CENTER">
+    <font face="Segoe Script" font-size="6vw">
+      <div class="port"><a style="text-decoration: none; color: #f200ff;" href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DYhH8siD-8tR0mzydcnKdNMJYf7gWpSe-Vx-_DXVPFbajc1h9O7Dz-XECXPDXNA%3D%3D" title="Portfolio">Portfolio</a></div></font>
+    <div class="topnav" id="myTopnav">
+      <button onclick="display_hidden()" id="hide" title="More Actions..."><i class="fa fa-ellipsis-v"></i></button>
+      <a style="text-decoration: none;" class="active" href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DYhH8siD-8tR0mzydcnKdNMJYf7gWpSe-Vx-_DXVPFbajc1h9O7Dz-XECXPDXNA%3D%3D" title="Home">
+        Home</a>
+      <a style="text-decoration: none"
+        href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DtRPsjVCegOy6S05OAGlp8tImcoBT5wK7HktvyHnC0Vt0jgWNnpVbDZM_gpp04A%3D%3D" title="About Me" class="deactive">
+        About
+      </a>
+      <a style="text-decoration: none" href="https://www.google.com" title="My Skills" class="deactive">
+        Skills
+      </a>
+      <a style="text-decoration: none"
+        href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DeP4bi--oIW9hYNPs-qMC0zNZ92LMMCRv8e8A-I0-XpgAQUmVg8GWakY4vMwJKQ%3D%3D" title="My Projects" class="deactive">
+       Projects
+      </a>
+      <a style="text-decoration: none;" class="deactive" href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3Dy6_4kPlxZk_bYn5aQKKnK2U6fdQeUE1OruhR_0SBRuQTg2M94T4Xev5-spCEfQ%3D%3D" title="Contact Me">
+        Contact</font></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()" title="Open Menu">
+        <i class="fa fa-bars"></i>
+        <a href="javascript:void(0);" class="ion" onclick="myFun()" title="Close Menu">
+          <i class="fa fa-close"></i>
+      </a>
+    </div>
+      <div id="hidden">
+          <table border="2" class="tools"><tr>
+           <td><a style="text-decoration: none; display: block;" class="tool" href="https://translate.google.com/" title="Translate">
+            <i class="fa fa-language"></i></a> </td>
+
+           <td><a style="text-decoration: none; display: block;" class="tool" href=" " title="Audio Control">
+            <i class="fa fa-volume-up"></i></a> </td>
+
+           <td><a style="text-decoration: none; display: block;" class="tool" href=" " title="Toggle light/dark mode">
+            <i class="fa fa-adjust"></i></a> </td>
+
+           <td><a style="text-decoration: none; display: block;" class="tool" href="https://translate.google.com/" title="Search">
+            <i class="fa fa-search"></i></a> </td>
+          <td><a style="text-decoration: none; display: block;" class="tool" href="https://translate.google.com/" title="Info">
+            <i class="fa fa-info-circle"></i></a></td>
+          </tr></table>
+      </div>
+    </div>
+  </header>
+  <p class="arka">
+    <img src="https://lh3.googleusercontent.com/a/ACg8ocLS3Pet5BcC7goZpYnBjoT_cQA10V-HWweEAyf4LDd2eZPi7-Lx=s360-c-no"
+      class="img">
+    <br><br>
+  </p>
+  <section class="hello">
+    Hello!!<br>
+    <hr size="2">
+    It's Me<br>
+    <b>ARKA ARUN <br>NANDI</b>
+
+  </section>
+  <table class="footer" align="center">
+    <tr>
+       <td>
+        Copyright &copy; 2024 Arka Nandi
+       </td>
+    </tr>
+  </table>
+</body>
+
+</html>
