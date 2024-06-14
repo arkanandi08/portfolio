@@ -90,7 +90,7 @@ header {
     .arka {
       float: right;
       margin-right: 12vw;
-      margin-top: 9vw;
+      margin-top: 7vw;
     }
 
     .img {
@@ -180,7 +180,8 @@ header {
     .img {
       margin-right: 6vw;
       margin-top: 2.5vw;
-      max-height: 90vw;
+      max-height: 80vw;
+      height: 60vw;
     }
   .topnav.responsive {
   width: 100%;
