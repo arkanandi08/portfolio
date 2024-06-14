@@ -178,9 +178,9 @@ header {
     }
 
     .img {
-      margin-left: 6vw;
+      margin-left: 4vw;
       margin-top: 2.5vw;
-      max-height: 80vw;
+      height: 80vw;
     }
   .topnav.responsive {
   width: 100%;
