@@ -4,211 +4,65 @@
   <title>Arka Nandi - Portfolio</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-  header{
-  position:fixed;
-  width:100%;
-  top:0;
-  left:0;
-  right:0;
-}
-body{
-  text-align: center;
-  color:white;
-  margin-top: 15vh;
-  font-size: 200%;
-  height: 100%;
-}
-.bg{
-  background-image: url("https://steamuserimages-a.akamaihd.net/ugc/1807625853851741173/D92F2869CE9C0FC9FB6CAE45D3EC039D483C6D9D/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false");
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-.tab{
-  width:100%;
-  color: #e9c0ff;
-  font-size: 4vh;
-  background-color: #32077e;
-  height: 6vh;
-  padding: 3px;
-}
-.home{
-  float: left;
-  margin-left: 2vw;
-  margin-top: 1vh;
-}
-.phone{
-  float: right;
-  margin-right: 4.5vw;
-  margin-top: 1vh;
-}
-.downtab{
-  width:100%;
-  color: #e9c0ff;
-  font-size: 3.8vh;
-  background-color: #010c1e;
-  height: 6vh;
-  word-spacing: 9vw;
-  padding-top: 7px;
-}
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
-  text-align: center;
-  font-size: 3vh;
-}
-  .proj{
-  background-color: #ff6b09;
-  border-color: #ff6b09;
-  border-radius: 15px;
-  padding-right: 2vh;
-  padding-left: 2vh;
-  padding-bottom: 1vh;
-}
-.proj:hover{
-            text-shadow: 0 1px 0 red, 0 2px 0 rgb(210, 2, 2),
-                0 3px 0 rgb(171, 6, 6), 0 4px 0 rgb(129, 5, 5),
-                0 5px 0 rgb(117, 3, 3), 0 6px 0 rgb(43, 1, 1);
-}
-.info{
-    background-color: #2c1b2fa2;
-    border-radius: 20px;
-    font-size: 3vh;
-    margin-right: 5vw;
-    margin-left: 5vw;
-    font-size: 4vh;
-  }
-  h2{
-    border-style:outset;
-    border-width: 1.6vh;
-    border-radius: 50px 50px 50px 50px;
-    border-color: rgb(158, 8, 8);
-    background-color: #07ff2081;
-    color:rgb(158, 8, 8);
-    font-size: 8vh;
-    margin-top: 20vh;
-  }
-  .fir{
-    margin-bottom: 3vh;
-    height: 200px;
-    width: 75vw;
-    max-width: 50vh;
-    max-height: 23vh;
-    background-color: #32077e;
-    padding: 0.2vh;
-    margin-left: 3vw;
-    float: inline-start;
-    border-radius: 0vh 10vh;
-  }
-  .sec{
-    margin-bottom: 3vh;
-    height: 200px;
-    width: 75vw;
-    max-width: 50vh;
-    max-height: 23vh;
-    background-color: #32077e;
-    padding: 0.2vh;
-    float: right;
-    margin-right: 3vw;
-    border-radius: 0vh 10vh;
-  }
-  .thir{
-    margin-bottom: 3vh;
-    height: 200px;
-    width: 75vw;
-    max-width: 50vh;
-    max-height: 23vh;
-    background-color: #32077e;
-    padding: 0.2vh;
-    float:inline-end;
-    margin-right: 3vw;
-    border-radius: 0vh 10vh;
-  }
-  .for{
-    margin-bottom: 3vh;
-    height: 200px;
-    width: 75vw;
-    max-width: 50vh;
-    max-height: 23vh;
-    background-color: #32077e;
-    padding: 0.2vh;
-    float: left;
-    margin-left: 3vw;
-    border-radius: 0vh 10vh;
-  }
-  .fiv{
-    margin-bottom: 3vh;
-    height: 200px;
-    width: 75vw;
-    max-width: 50vh;
-    max-height: 23vh;
-    background-color: #32077e;
-    padding: 0.2vh;
-    float: right;
-    margin-right: 3vw;
-    border-radius: 0vh 10vh;
-  }
-  .six{
-    margin-bottom: 15vw;
-    height: 200px;
-    width: 75vw;
-    max-width: 50vh;
-    max-height: 23vh;
-    background-color: #32077e;
-    padding: 0.2vh;
-    float: left;
-    margin-left: 3vw;
-    border-radius: 0vh 10vh;
-  }
-  .frame::after{
-    margin-bottom: 11vh;
-    float: right;
-    clear: right;
-  }
-  iframe{
-    height: 40vw;
-    margin-bottom: 3vw;
-  }
-  h1:hover {
-            text-shadow: 0 1px 0 red, 0 2px 0 rgb(210, 2, 2),
-                0 3px 0 rgb(171, 6, 6), 0 4px 0 rgb(129, 5, 5),
-                0 5px 0 rgb(117, 3, 3), 0 6px 0 rgb(43, 1, 1);
-        }
-</style>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+
 </head>
-<body class="bg">
+<body class="bg" onload="display_hidden()">
   <header ALIGN="CENTER">
-      <section class="tab">
-        <article class="home">
-            <a style="text-decoration: none " href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DYhH8siD-8tR0mzydcnKdNMJYf7gWpSe-Vx-_DXVPFbajc1h9O7Dz-XECXPDXNA%3D%3D">&nbsp<font color="white">
-            <i class="fa fa-home"></i></font>&nbsp&nbsp</a></article>
-            <font face="Segoe Script" font-size="6vw">
-              Portfolio&nbsp&nbsp</font>
-              <article class="phone">
-            <a href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3Dy6_4kPlxZk_bYn5aQKKnK2U6fdQeUE1OruhR_0SBRuQTg2M94T4Xev5-spCEfQ%3D%3D"><font color="white"><i class="fa fa-phone"></i></font></a>
-            </article></section>
-              <section class="downtab">
-            <a style="text-decoration: none" href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DtRPsjVCegOy6S05OAGlp8tImcoBT5wK7HktvyHnC0Vt0jgWNnpVbDZM_gpp04A%3D%3D"><font color="white">About</font></a>
-            <a  style="text-decoration: none" href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DtRPsjVCegOy6S05OAGlp8tImcoBT5wK7HktvyHnC0Vt0jgWNnpVbDZM_gpp04A%3D%3D"><font color="white">Skills</font></a>
-            <a style="text-decoration: none" href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DeP4bi--oIW9hYNPs-qMC0zNZ92LMMCRv8e8A-I0-XpgAQUmVg8GWakY4vMwJKQ%3D%3D" class="proj"><font color="white">Projects</font></a>
-          </section>
+    <font face="Segoe Script" font-size="6vw">
+      <div class="port"><a style="text-decoration: none; color: #f200ff;" href="home.htm" title="Portfolio">Portfolio</a></div></font>
+    <div class="topnav" id="myTopnav">
+      <button onclick="display_hidden()" id="hide" title="More Actions..."><i class="fa fa-ellipsis-v"></i></button>
+      <a style="text-decoration: none;" class="active" href="home.htm" title="Home">
+        Home</a>
+      <a style="text-decoration: none"
+        href="About.htm" title="About Me" class="deactive">
+        About
+      </a>
+      <a style="text-decoration: none" href="https://www.google.com" title="My Skills" class="deactive">
+        Skills
+      </a>
+      <a style="text-decoration: none"
+        href="projects.htm" title="My Projects" class="deactive">
+       Projects
+      </a>
+      <a style="text-decoration: none;" class="deactive" href="contacts.htm" title="Contact Me">
+        Contact</font></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()" title="Open Menu">
+        <i class="fa fa-bars"></i>
+        <a href="javascript:void(0);" class="ion" onclick="myFun()" title="Close Menu">
+          <i class="fa fa-close"></i>
+      </a>
+    </div>
+      <div id="hidden">
+          <table border="2" class="tools"><tr>
+           <td><a style="text-decoration: none; display: block;" class="tool" href="https://translate.google.com/" title="Translate">
+            <i class="fa fa-language"></i></a> </td>
+
+           <td><a style="text-decoration: none; display: block;" class="tool" href=" " title="Audio Control">
+            <i class="fa fa-volume-up"></i></a> </td>
+
+           <td><a style="text-decoration: none; display: block;" class="tool" href=" " title="Toggle light/dark mode">
+            <i class="fa fa-adjust"></i></a> </td>
+
+           <td><a style="text-decoration: none; display: block;" class="tool" href="https://translate.google.com/" title="Search">
+            <i class="fa fa-search"></i></a> </td>
+          <td><a style="text-decoration: none; display: block;" class="tool" href="https://translate.google.com/" title="Info">
+            <i class="fa fa-info-circle"></i></a></td>
+          </tr></table>
+      </div>
+    </div>
   </header>
   <h2>Projects</h2>
-  <section class="info"><br>
+  <section class="info2"><br>
  <a style="text-decoration: none " href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DkW3uPT3MXXiI9wXtiywVgZCUBIlQ1K0lKVpuHgzkqePmB0GyyON9lNzBeQ%3D%3D"><h1><article class="fir"><br><font color="#07ff2081">First Practical</font></article></h1></a>
         <a style="text-decoration: none " href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3D-QgvkGU5K-MVlAP6Ss_aSwwdhUsZUTiCebtlGO_Zg3ksZp-BuN5foAHRdg%3D%3D"><h1><article class="sec"><br><font color="#07ff2081">Project-1</font></article></h1></a>
           <a style="text-decoration: none " href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DjLtfDcybpq2xMrsilfXY5Jl1uYU2_HQb9qA9NbOyKz8l-uvtunlHh5kh6g%3D%3D"><h1><article class="thir"><br> <font color="#07ff2081">My Family</font></article></h1></a>
             <a style="text-decoration: none " href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3Dvds6ZebYlEo8C1UY-qRMqbj8TaEbzEkca_2Peh1OtKIdT8-GwjaStOEoJw%3D%3D"><h1><article class="for"><br><font color="#07ff2081">Don't Open</font></article></h1></a>
               <a style="text-decoration: none " href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DOSxcUtQJh5wVsgicENpJkKsNBjx8ybnlyamFGDIAruMuX2yobkiOcHRSLQ%3D%3D"><h1><article class="fiv"><br><font color="#07ff2081">All Content</font></article></h1></a>
                <a style="text-decoration: none " href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DgcVdMow9GG0VhP-ogdLkIuaoz79_oRt53ipSZDYhipcSJnsUCEOx9tEwBw%3D%3D"><h1> <article class="six"><br><font color="#07ff2081">Login</font></article></h1></a>
-             <article class="frame"><iframe src="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DYhH8siD-8tR0mzydcnKdNMJYf7gWpSe-Vx-_DXVPFbajc1h9O7Dz-XECXPDXNA%3D%3D" height="30%" width="90%"></iframe></article>
+             <article class="frame"><iframe src="home.htm" height="30%" width="90%"></iframe></article>
   </section><br><br><br>
   <table class="footer" align="center">
     <tr><th>

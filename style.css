@@ -223,3 +223,150 @@ header {
   margin-right: 10%;
 }
 }
+/* About */
+  .about{
+  background-color: #ff6b09;
+  border-color: #ff6b09;
+  border-radius: 15px;
+  padding-right: 2vh;
+  padding-left: 2vh;
+  padding-bottom: 0.8vh;
+}
+.info{
+    background-color: #a608c5a2;
+    border-radius: 5px 50px;
+    padding: 10px;
+    font-size: 3vh;
+    text-align: left;
+    width: 60%;
+    margin-right: 7vw;
+    margin-left: 7vw;
+  }
+  .title{
+    border-style:outset;
+    border-width: 1vh;
+    border-radius: 50px 50px 50px 50px;
+    border-color: rgb(158, 8, 8);
+    background-color: #07ff2081;
+    color:rgb(158, 8, 8);
+    font-size: 6vh;
+    margin-top: 0vh;
+  }
+  /* project */
+  .proj{
+    background-color: #ff6b09;
+    border-color: #ff6b09;
+    border-radius: 15px;
+    padding-right: 2vh;
+    padding-left: 2vh;
+    padding-bottom: 1vh;
+  }
+  .proj:hover{
+              text-shadow: 0 1px 0 red, 0 2px 0 rgb(210, 2, 2),
+                  0 3px 0 rgb(171, 6, 6), 0 4px 0 rgb(129, 5, 5),
+                  0 5px 0 rgb(117, 3, 3), 0 6px 0 rgb(43, 1, 1);
+  }
+  .info2{
+      background-color: #2c1b2fa2;
+      border-radius: 20px;
+      font-size: 3vh;
+      margin-right: 5vw;
+      margin-left: 5vw;
+      font-size: 4vh;
+    }
+    h2{
+      border-style:outset;
+      border-width: 1.6vh;
+      border-radius: 50px 50px 50px 50px;
+      border-color: rgb(158, 8, 8);
+      background-color: #07ff2081;
+      color:rgb(158, 8, 8);
+      font-size: 8vh;
+      margin-top: 20vh;
+    }
+    .fir{
+      margin-bottom: 3vh;
+      height: 200px;
+      width: 75vw;
+      max-width: 50vh;
+      max-height: 23vh;
+      background-color: #32077e;
+      padding: 0.2vh;
+      margin-left: 3vw;
+      float: inline-start;
+      border-radius: 0vh 10vh;
+    }
+    .sec{
+      margin-bottom: 3vh;
+      height: 200px;
+      width: 75vw;
+      max-width: 50vh;
+      max-height: 23vh;
+      background-color: #32077e;
+      padding: 0.2vh;
+      float: right;
+      margin-right: 3vw;
+      border-radius: 0vh 10vh;
+    }
+    .thir{
+      margin-bottom: 3vh;
+      height: 200px;
+      width: 75vw;
+      max-width: 50vh;
+      max-height: 23vh;
+      background-color: #32077e;
+      padding: 0.2vh;
+      float:inline-end;
+      margin-right: 3vw;
+      border-radius: 0vh 10vh;
+    }
+    .for{
+      margin-bottom: 3vh;
+      height: 200px;
+      width: 75vw;
+      max-width: 50vh;
+      max-height: 23vh;
+      background-color: #32077e;
+      padding: 0.2vh;
+      float: left;
+      margin-left: 3vw;
+      border-radius: 0vh 10vh;
+    }
+    .fiv{
+      margin-bottom: 3vh;
+      height: 200px;
+      width: 75vw;
+      max-width: 50vh;
+      max-height: 23vh;
+      background-color: #32077e;
+      padding: 0.2vh;
+      float: right;
+      margin-right: 3vw;
+      border-radius: 0vh 10vh;
+    }
+    .six{
+      margin-bottom: 15vw;
+      height: 200px;
+      width: 75vw;
+      max-width: 50vh;
+      max-height: 23vh;
+      background-color: #32077e;
+      padding: 0.2vh;
+      float: left;
+      margin-left: 3vw;
+      border-radius: 0vh 10vh;
+    }
+    .frame::after{
+      margin-bottom: 11vh;
+      float: right;
+      clear: right;
+    }
+    iframe{
+      height: 40vw;
+      margin-bottom: 3vw;
+    }
+    h1:hover {
+              text-shadow: 0 1px 0 red, 0 2px 0 rgb(210, 2, 2),
+                  0 3px 0 rgb(171, 6, 6), 0 4px 0 rgb(129, 5, 5),
+                  0 5px 0 rgb(117, 3, 3), 0 6px 0 rgb(43, 1, 1);
+          }
