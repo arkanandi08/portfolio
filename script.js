@@ -22,3 +22,9 @@ if (x.className === "topnav") {
   x.className = "topnav";
 }
 }
+// contacts
+function nam()
+{
+ var a=frm1.g1.value;
+ alert("Welcome : "+a);
+}

@@ -5,134 +5,61 @@
   <title>Arka Nandi - Portfolio</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script language="javascript">
- function nam()
- {
-  var a=frm1.g1.value;
-  alert("Welcome : "+a);
- }
-  </script>
-  <style>
-header{
-  position:fixed;
-  width:100%;
-  top:0;
-  left:0;
-  right:0;
-}
-body{
-  text-align: center;
-  color:white;
-  margin-top: 15vh;
-  font-size: 200%;
-  height: 100%;
-}
-.bg{
-  background-image: url("https://steamuserimages-a.akamaihd.net/ugc/1807625853851741173/D92F2869CE9C0FC9FB6CAE45D3EC039D483C6D9D/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false");
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-.tab{
-  width:100%;
-  color: #e9c0ff;
-  font-size: 4vh;
-  background-color: #32077e;
-  height: 6vh;
-  padding: 3px;
-}
-.home{
-  float: left;
-  margin-left: 2vw;
-  margin-top: 1vh;
-}
-.downtab{
-  width:100%;
-  color: #e9c0ff;
-  font-size: 4vh;
-  background-color: #010c1e;
-  word-spacing: 11vw;
-  padding-top: 6px;
-  padding-bottom: 7px;
-}
-.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: black;
-  color: white;
-  text-align: center;
-  font-size: 3vh;
-}
-  .phone{
-  float: right;
-  margin-right: 3.5vw;
-  margin-top: 0.2vh;
-  background-color: #ff6b09;
-  border-color: #ff6b09;
-  border-radius: 20px;
-  padding: 3px;
-}
-form{
-  border-style: solid;
-  border-radius: 0px 50px;
-  border-color: red;
-  background-color: #170eb97e;
-  margin-right: 14%;
-  margin-left: 14%;
-  font-size: 4.8vh;
-  padding: 10px;
-  }
-  h3{
-  border-style: solid;
-  border-color: rgb(222, 255, 11);
-  border-radius: 50px 15px;
-  background-color: #bf0a0493;
-  padding: 8px;
-  font-size: 5vh;
-  margin-top: 25vh;
-  }
-  .sub{
-    background-color: #4b085c;
-    font-size: 5vh;
-    color: white;
-  }
-  .use{
-    text-align: center;
-    font-size: 4vh;
-    background-color: rgba(230, 0, 255, 0.493);
-    padding: 10px;
-    border-style: solid;
-    border-radius: 15px 50px;
-    border-color: rgb(43, 255, 0);
-  }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="script.js"></script>
+  <link rel="icon" href="logo.png" type="image/x-icon">
 </head>
-<body class="bg">
+<body class="bg" onload="display_hidden()">
   <header ALIGN="CENTER">
-    <section class="tab">
-      <article class="home">
-          <a href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DYhH8siD-8tR0mzydcnKdNMJYf7gWpSe-Vx-_DXVPFbajc1h9O7Dz-XECXPDXNA%3D%3D"><font color="white">
-          <i class="fa fa-home"></i></font></a></article>
-          <font face="Segoe Script" font-size="6vw">
-            Portfolio</font>
-            <article class="phone">
-          <a style="text-decoration: none" href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3Dy6_4kPlxZk_bYn5aQKKnK2U6fdQeUE1OruhR_0SBRuQTg2M94T4Xev5-spCEfQ%3D%3D">&nbsp<font color="white"><i class="fa fa-phone"></i></font>&nbsp</a>
-          </article></section>
-            <section class="downtab">
-          <a style="text-decoration: none" href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DtRPsjVCegOy6S05OAGlp8tImcoBT5wK7HktvyHnC0Vt0jgWNnpVbDZM_gpp04A%3D%3D"><font color="white">About</font></a>
-          <a  style="text-decoration: none" href="https://www.google.com"><font color="white">Skills</font></a>
-          <a style="text-decoration: none" href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DeP4bi--oIW9hYNPs-qMC0zNZ92LMMCRv8e8A-I0-XpgAQUmVg8GWakY4vMwJKQ%3D%3D"><font color="white">Projects</font></a>
-        </section>
-</header>
+    <font face="Segoe Script" font-size="6vw">
+      <div class="port"><a style="text-decoration: none;" href="home.htm" title="Portfolio" class="portf">Portfolio</a></div></font>
+    <div class="topnav" id="myTopnav">
+      <button onclick="display_hidden()" id="hide" title="More Actions..."><i class="fa fa-ellipsis-v"></i></button>
+      <a style="text-decoration: none;" class="deactive" href="home.htm" title="Home">
+        Home</a>
+      <a style="text-decoration: none"
+        href="About.htm" title="About Me" class="deactive">
+        About
+      </a>
+      <a style="text-decoration: none" href="https://www.google.com" title="My Skills" class="deactive">
+        Skills
+      </a>
+      <a style="text-decoration: none"
+        href="projects.htm" title="My Projects" class="deactive">
+       Projects
+      </a>
+      <a style="text-decoration: none;" class="active" href="contacts.htm" title="Contact Me">
+        Contact</font></a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()" title="Open Menu">
+        <i class="fa fa-bars"></i>
+        <a href="javascript:void(0);" class="ion" onclick="myFun()" title="Close Menu">
+          <i class="fa fa-close"></i>
+      </a>
+    </div>
+      <div id="hidden">
+          <table border="2" class="tools"><tr>
+           <td><a style="text-decoration: none; display: block;" class="tool" href="https://translate.google.com/" title="Translate">
+            <i class="fa fa-language"></i></a> </td>
+
+           <td><a style="text-decoration: none; display: block;" class="tool" href=" " title="Audio Control">
+            <i class="fa fa-volume-up"></i></a> </td>
+
+           <td><a style="text-decoration: none; display: block;" class="tool" href=" " title="Toggle light/dark mode">
+            <i class="fa fa-adjust"></i></a> </td>
+
+           <td><a style="text-decoration: none; display: block;" class="tool" href="https://translate.google.com/" title="Search">
+            <i class="fa fa-search"></i></a> </td>
+          <td><a style="text-decoration: none; display: block;" class="tool" href="https://translate.google.com/" title="Info">
+            <i class="fa fa-info-circle"></i></a></td>
+          </tr></table>
+      </div>
+    </div>
+  </header>
 <h3 align="center">FEEDBACK FORM</h3>
-<form name="frm1" method="post" action="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DiELlaSALsVAwnotffpMPuTwMRA5YAqUoVbvTDrbASxBBWUBezJyLrTHpWBVC0w%3D%3D"> <br>
+<form name="frm1" method="post" action="Submit.htm"> <br>
       <i class="fa fa-solid fa-user"></i> 
       Name* :
-  <input type="text" name="g1" placeholder="Your Name" style="height: 3vh;width: 30vh; font-size: 2vh;" onblur="nam()"> <br><br>
+  <input type="text" name="g1" placeholder="Your Name" style="height: 3vh;width: 30vh; font-size: 2vh;" onblur="nam()" required> <br><br>
  
       <i class="fa fa-solid fa-envelope"></i> 
       Email* :

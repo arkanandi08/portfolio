@@ -6,15 +6,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="script.js"></script>
+  <link rel="icon" href="logo.png" type="image/x-icon">
 
 </head>
 <body class="bg" onload="display_hidden()">
   <header ALIGN="CENTER">
     <font face="Segoe Script" font-size="6vw">
-      <div class="port"><a style="text-decoration: none; color: #f200ff;" href="home.htm" title="Portfolio">Portfolio</a></div></font>
+      <div class="port"><a style="text-decoration: none;" href="home.htm" title="Portfolio" class="portf">Portfolio</a></div></font>
     <div class="topnav" id="myTopnav">
       <button onclick="display_hidden()" id="hide" title="More Actions..."><i class="fa fa-ellipsis-v"></i></button>
-      <a style="text-decoration: none;" class="active" href="home.htm" title="Home">
+      <a style="text-decoration: none;" class="deactive" href="home.htm" title="Home">
         Home</a>
       <a style="text-decoration: none"
         href="About.htm" title="About Me" class="deactive">
@@ -24,7 +25,7 @@
         Skills
       </a>
       <a style="text-decoration: none"
-        href="projects.htm" title="My Projects" class="deactive">
+        href="projects.htm" title="My Projects" class="active">
        Projects
       </a>
       <a style="text-decoration: none;" class="deactive" href="contacts.htm" title="Contact Me">
@@ -56,12 +57,12 @@
   </header>
   <h2>Projects</h2>
   <section class="info2"><br>
- <a style="text-decoration: none " href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DkW3uPT3MXXiI9wXtiywVgZCUBIlQ1K0lKVpuHgzkqePmB0GyyON9lNzBeQ%3D%3D"><h1><article class="fir"><br><font color="#07ff2081">First Practical</font></article></h1></a>
-        <a style="text-decoration: none " href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3D-QgvkGU5K-MVlAP6Ss_aSwwdhUsZUTiCebtlGO_Zg3ksZp-BuN5foAHRdg%3D%3D"><h1><article class="sec"><br><font color="#07ff2081">Project-1</font></article></h1></a>
-          <a style="text-decoration: none " href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DjLtfDcybpq2xMrsilfXY5Jl1uYU2_HQb9qA9NbOyKz8l-uvtunlHh5kh6g%3D%3D"><h1><article class="thir"><br> <font color="#07ff2081">My Family</font></article></h1></a>
-            <a style="text-decoration: none " href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3Dvds6ZebYlEo8C1UY-qRMqbj8TaEbzEkca_2Peh1OtKIdT8-GwjaStOEoJw%3D%3D"><h1><article class="for"><br><font color="#07ff2081">Don't Open</font></article></h1></a>
-              <a style="text-decoration: none " href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DOSxcUtQJh5wVsgicENpJkKsNBjx8ybnlyamFGDIAruMuX2yobkiOcHRSLQ%3D%3D"><h1><article class="fiv"><br><font color="#07ff2081">All Content</font></article></h1></a>
-               <a style="text-decoration: none " href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DgcVdMow9GG0VhP-ogdLkIuaoz79_oRt53ipSZDYhipcSJnsUCEOx9tEwBw%3D%3D"><h1> <article class="six"><br><font color="#07ff2081">Login</font></article></h1></a>
+ <a style="text-decoration: none " href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DkW3uPT3MXXiI9wXtiywVgZCUBIlQ1K0lKVpuHgzkqePmB0GyyON9lNzBeQ%3D%3D"><h1><article class="fir" id="shad"><br><font color="#07ff2081">First Practical</font></article></h1></a>
+        <a style="text-decoration: none " href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3D-QgvkGU5K-MVlAP6Ss_aSwwdhUsZUTiCebtlGO_Zg3ksZp-BuN5foAHRdg%3D%3D"><h1><article class="sec" id="shad"><br><font color="#07ff2081">Project-1</font></article></h1></a>
+          <a style="text-decoration: none " href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DjLtfDcybpq2xMrsilfXY5Jl1uYU2_HQb9qA9NbOyKz8l-uvtunlHh5kh6g%3D%3D"><h1><article class="thir" id="shad"><br> <font color="#07ff2081">My Family</font></article></h1></a>
+            <a style="text-decoration: none " href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3Dvds6ZebYlEo8C1UY-qRMqbj8TaEbzEkca_2Peh1OtKIdT8-GwjaStOEoJw%3D%3D"><h1><article class="for" id="shad"><br><font color="#07ff2081">Don't Open</font></article></h1></a>
+              <a style="text-decoration: none " href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DOSxcUtQJh5wVsgicENpJkKsNBjx8ybnlyamFGDIAruMuX2yobkiOcHRSLQ%3D%3D"><h1><article class="fiv" id="shad"><br><font color="#07ff2081">All Content</font></article></h1></a>
+               <a style="text-decoration: none " href="content://com.google.android.apps.docs.storage.legacy/enc%3Dencoded%3DgcVdMow9GG0VhP-ogdLkIuaoz79_oRt53ipSZDYhipcSJnsUCEOx9tEwBw%3D%3D"><h1> <article class="six" id="shad"><br><font color="#07ff2081">Login</font></article></h1></a>
              <article class="frame"><iframe src="home.htm" height="30%" width="90%"></iframe></article>
   </section><br><br><br>
   <table class="footer" align="center">
